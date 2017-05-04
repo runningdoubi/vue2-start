@@ -1,16 +1,22 @@
-import App from '../App'
+import App from "../App"
+import Home from "../page/home";
+import Item from "../page/item";
+import Score from "../page/score";
 
 export default [{
     path: '/',
     component: App,
     children: [{
         path: '',
-        component: r => require.ensure([], () => r(require('../page/home')), 'home')
+        component: Home
+        //component: r => require.ensure([], () => r(require('../page/home')), 'home')
     }, {
         path: '/item',
-        component: r => require.ensure([], () => r(require('../page/item')), 'item')
+        component: Item
+        //component: r => require.ensure([], () => r(require('../page/item')), 'item')
     }, {
         path: '/score',
-        component: r => require.ensure([], () => r(require('../page/score')), 'score')
+        component: Score
+        //component: r => require.ensure([], () => r(require('../page/score')), 'score')
     }]
 }]

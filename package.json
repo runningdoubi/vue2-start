@@ -1,8 +1,8 @@
 {
-  "name": "elm",
+  "name": "vue-start",
   "version": "1.0.0",
-  "description": "vue2-elm",
-  "author": "maguohua <1264889788@qq.com>",
+  "description": "vue-start",
+  "author": "zzz",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
